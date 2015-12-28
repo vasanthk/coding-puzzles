@@ -12,6 +12,7 @@
 var fibArr = function(n) {
   fibArr.cache = fibArr.cache || [0, 1];
 
+  // Check if there is a value for the current array index.
   if(typeof fibArr.cache[n] === 'undefined') {
     fibArr.cache[n] = fibArr(n-1) + fibArr(n-2);
   }
