@@ -8,7 +8,12 @@
  * http://www.graemeboy.com/fibonacci-sequence
  */
 
-// Keeping Track of the Series in an Array
+/**
+ * Keeping Track of the Series in an Array
+ * - Recursion with memoization
+ *
+ * TOP DOWN APPROACH
+ */
 var fibArr = function(n) {
   fibArr.cache = fibArr.cache || [0, 1];
 
@@ -29,3 +34,28 @@ var fibArr = function(n) {
 // [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233 ]
 
 
+/**
+ * By avoiding recursion and using a for loop instead.
+ *
+ * Advantages:
+ * - Utilizes cache more effectively
+ * - Simpler call stack and lot easier to reason about
+ *
+ * BOTTOM UP APPROACH
+ */
+
+function fib(n) {
+  var seq = [0, 1];
+  if(typeof seq[n] === 'undefined') {
+    for(var i=2; i <= n; i++) {
+      seq[i] = seq[i-1] + seq[i-2];
+    }
+  }
+  return seq[n];
+}
+
+// OUTPUT
+//
+// fibN = fib(13)
+// 233
+//
