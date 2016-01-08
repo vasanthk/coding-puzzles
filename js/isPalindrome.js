@@ -16,3 +16,13 @@ function isPalindrome(str) {
 
   return false;
 }
+
+
+// With recursion
+function recursiveIsPalindrome(str) {
+  if(str.length === 0) {
+    return true;
+  } else {
+    return (str[0] === str[str.length - 1]) && recursiveIsPalindrome(str.slice(1, str.length - 1))
+  }
+}
