@@ -6,6 +6,9 @@
  *
  * @Reference:
  * http://www.graemeboy.com/fibonacci-sequence
+ *
+ * In Detail explantion of how to go about solving it in interviews
+ * http://programmers.stackexchange.com/a/251108/62739
  */
 
 /**
