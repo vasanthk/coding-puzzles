@@ -1,6 +1,8 @@
 /**
  * Reversing a string
  *
+ * Pg 173
+ *
  * @Reference:
  * http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/
  * http://ilikekillnerds.com/2015/07/reversing-a-string-in-javascript-3-different-ways/
