@@ -3,6 +3,8 @@
  image is 4 bytes, write a method to rotate the image by 90 degrees.
  Can you do this in place?
 
+ Pg 179
+
  Simplified example:
  [                           [
  [a1, a2, a3, a4],           [1,2,3,4],
