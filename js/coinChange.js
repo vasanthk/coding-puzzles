@@ -16,7 +16,7 @@ var makeChange = function (coins) {
       return [];
     }
     if (cache[amount]) {
-      return cache[amount].slice();
+      return cache[amount];
     }
 
     var min = [], newMin, newAmount;
