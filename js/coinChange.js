@@ -25,13 +25,17 @@ var makeChange = function (coins) {
 
       if (newAmount >= 0) {
         newMin = change(newAmount);
-        if ((newMin.length < min.length - 1 || !min.length) && (newMin.length || !newAmount)) {
+
+        if (
+          (newMin.length < min.length - 1 || !min.length) &&  // Ensure newMin will be lesser in size than min
+          (newMin.length || !newAmount) // Ensure newMin has values and that newAmount is not zero.
+        ) {
           min = [coin].concat(newMin);
         }
       }
     });
     cache[amount] = min;
-    return cache[amount].slice();
+    return cache[amount];
   };
 };
 
