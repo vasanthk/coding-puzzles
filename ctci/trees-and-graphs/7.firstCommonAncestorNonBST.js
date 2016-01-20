@@ -3,14 +3,16 @@
  * of two nodes in a binary tree. Avoid storing additional nodes in a data structure.
  * NOTE: This is not necessarily a binary search tree.
  *
+ * This soln uses recusrion. Check CTCI for alternate optimized solns.
+ *
  * @Reference:
  * https://github.com/shreeya/cci-javascript/blob/master/4.7.js
  */
 
 var Tree = function (value) {
-  this.left;
-  this.right;
   this.value = value;
+  this.left = null;
+  this.right = null;
 };
 
 function findCommonAncestor(root, nodeA, nodeB) {
