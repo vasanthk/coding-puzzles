@@ -3,11 +3,11 @@
  * the nodes at each depth (i e , if you have a tree with depth D, you’ll have D linked lists)
  *
  * Hint: BFS or DFS works.
- * Current implementation is in BFS
+ * Current implementation is in DFS
  *
  * Time Complexity: O(n)
- * No Extra space required for BFS
  * DFS uses O(log n) space for the recursice calls.
+ * No Extra space required for BFS
  *
  * @Reference:
  * https://github.com/learnerChick/JavascriptAlgorithms/blob/master/BinarySearchTree/LinkedListFromBst.js
@@ -52,7 +52,7 @@ function createList(root) {
   return lists;
 }
 
-// Function that creates the Linked List
+// Function that creates the Linked List (DFS)
 function listCreator(node, lists, level) {
   if (node === null) {
     return;
