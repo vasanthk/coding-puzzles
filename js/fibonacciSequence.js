@@ -15,6 +15,8 @@
  * Keeping Track of the Series in an Array
  * - Recursion with memoization
  *
+ * Runtime: O(n)
+ *
  * TOP DOWN APPROACH
  */
 var fibArr = function(n) {
