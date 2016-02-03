@@ -29,3 +29,8 @@ function findMagicIndex(array) {
 // findMagicIndex(input)
 //
 // [5, 6]
+
+
+// FOLLOW UP:
+// What if the values are not distinct?
+// In such a case, check if value already present in magicIndices before pushing.
