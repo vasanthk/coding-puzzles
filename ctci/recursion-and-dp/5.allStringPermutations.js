@@ -4,7 +4,7 @@
  * Hint:
  * Dynamic Programming. The solution for this problem is usually recursive.
  *
- * Time Complexity: O(n!)
+ * Time Complexity: O(n!) -- since there are n! permutations
  *
  * @Reference:
  * http://www.graemeboy.com/string-permutations
@@ -12,6 +12,33 @@
  * https://github.com/vasanthk/cpz/blob/master/js/stringPermutations.js
  */
 
+// IMPLEMENTATION 1
+function permute(str) {
+  if (str.length <= 1) {
+    return str;
+  }
+
+  var permuteNMinus1 = permute(str.slice(1));
+  var permutations = [];
+
+  for (var j = 0; j < permuteNMinus1.length; j++) {
+    var permutation = permuteNMinus1[j];
+    for (var i = 0; i <= permutation.length; i++) {
+      // The idea is to add the new letter str[0] to every position in all permutations of permuteNMinus1
+      // Check page 324 in book for more info
+      permutations.push(permutation.slice(0, i) + str[0] + permutation.slice(i));
+    }
+  }
+
+  return permutations;
+}
+
+// OUTPUT
+// permute('dog')
+// ["dog", "odg", "ogd", "dgo", "gdo", "god"]
+
+
+// IMPLEMENTATION 2
 function stringPerm(rest, soFar) {
   var next;
   var remaining;
@@ -40,4 +67,5 @@ function stringPerm(rest, soFar) {
 // ogd
 // gdo
 // god
+
 
