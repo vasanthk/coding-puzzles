@@ -33,6 +33,9 @@ function countBlocks(x, y) {
 /**
  * FOLLOW UP
  * Imagine certain squares are “off limits”, such that the robot can not step on them. Design an algorithm to get all possible paths for the robot.
+ *
+ * @Reference:
+ * https://github.com/rcocetta/crackingcode/blob/master/js/chapter8.js
  */
 
 // We'll implement only the "FOLLOW UP"
