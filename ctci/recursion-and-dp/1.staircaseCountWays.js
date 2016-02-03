@@ -3,6 +3,9 @@
  * 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the child can run up the stairs.
  *
  * Hint: Dynamic Programming
+ *
+ * Runtime: O(n)
+ *
  * @Reference:
  * https://github.com/splashinn/javascript-algos-data-structures/blob/master/src/staircase.js
  */
