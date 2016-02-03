@@ -5,7 +5,6 @@
  *
  * @Reference:
  * https://github.com/EvanSkeete/front-end-interviews/blob/master/challenges.js#L27
- * https://github.com/vasanthk/cpz/blob/master/js/countBlocks.js
  */
 
 var memoizedBlocks = [[1]];
