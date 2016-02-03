@@ -55,10 +55,11 @@ function robot(grid) {
         return;
       }
       if (i < N - 1) {
-        takeStep(i + 1, j, "down", path.slice(0));
+        takeStep(i + 1, j, "down", path.slice());
+        // NOTE: Slice is used to make a copy of the path array (copies by value - instead of passing a reference)
       }
       if (j < N - 1) {
-        takeStep(i, j + 1, "right", path.slice(0));
+        takeStep(i, j + 1, "right", path.slice());
       }
     }
   }
