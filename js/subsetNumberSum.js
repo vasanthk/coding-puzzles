@@ -19,28 +19,28 @@
  */
 
 function subsetSum(numbers, target, partial) {
-  var s, n, remaining;
+  var partialSum, num, remaining;
 
   partial = partial || [];
 
   // sum partial
-  s = partial.reduce(function (a, b) {
-    return a + b;
+  partialSum = partial.reduce(function (sum, currVal) {
+    return sum + currVal;
   }, 0);
 
   // check if the partial sum is equals to target
-  if (s === target) {
+  if (partialSum === target) {
     console.log("%s=%s", partial.join("+"), target)
   }
 
-  if (s >= target) {
+  if (partialSum >= target) {
     return;  // if we reach the number why bother to continue
   }
 
   for (var i = 0; i < numbers.length; i++) {
-    n = numbers[i];
+    num = numbers[i];
     remaining = numbers.slice(i + 1);
-    subsetSum(remaining, target, partial.concat([n]));
+    subsetSum(remaining, target, partial.concat(num));
   }
 }
 
