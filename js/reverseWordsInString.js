@@ -5,6 +5,16 @@
  * https://blog.nraboy.com/2015/02/reverse-words-string-using-javascript/
  */
 
+function reverseWords(str) {
+  var result = "";
+  var wordArray = str.split(" ");
+  for (var i = wordArray.length - 1; i >= 0; i--) {
+    result += wordArray[i] + " ";
+  }
+  return result.trim(); // To remove trailing spaces.
+}
+
+// If we had to write out own split() function and not use the in-built one.
 String.prototype.splitStr = function (delimiter) {
   var stringArray = [];
   var tempStr = "";
@@ -21,13 +31,3 @@ String.prototype.splitStr = function (delimiter) {
   }
   return stringArray;
 };
-
-// Version using split()
-function reverseWords(str) {
-  var result = "";
-  var wordArray = str.split(" ");
-  for (var i = wordArray.length - 1; i >= 0; i--) {
-    result += wordArray[i] + " ";
-  }
-  return result.trim(); // To remove trailing spaces.
-}
