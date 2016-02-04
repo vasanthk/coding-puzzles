@@ -9,6 +9,7 @@
  *
  * @Reference:
  * https://github.com/EvanSkeete/front-end-interviews/blob/master/challenges.js#L81
+ * http://stackoverflow.com/questions/3172179/valid-permutation-of-parenthesis
  */
 
 function makeParens(n) {
