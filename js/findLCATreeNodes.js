@@ -1,10 +1,16 @@
 /**
  * Find LCA between two nodes in binary tree
  *
+ * Time Complexity: O(h), where h is the height of the BST
+ *
  * Hint: Break it down to sub-problems (Dynamic Programming)
  *
- * LCA for Binary Search Tree: http://articles.leetcode.com/2011/07/lowest-common-ancestor-of-a-binary-search-tree.html
- * LCA for Binary Tree: http://articles.leetcode.com/2011/07/lowest-common-ancestor-of-a-binary-tree-part-i.html
+ * LCA for Binary Search Tree:
+ * http://articles.leetcode.com/2011/07/lowest-common-ancestor-of-a-binary-search-tree.html
+ *
+ * LCA for Binary Tree:
+ * http://articles.leetcode.com/2011/07/lowest-common-ancestor-of-a-binary-tree-part-i.html
+ * http://articles.leetcode.com/2011/07/lowest-common-ancestor-of-a-binary-tree-part-ii.html
  */
 
 function findLCATreeNodes(node1, node2, tree) {
