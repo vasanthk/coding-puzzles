@@ -61,7 +61,7 @@ function missingTwoNumbers(arr, n) {
   // Once you get a, b = missingNumsSum - a.
 
 
-  a = (missingNumsSum + Math.sqrt((missingNumsSum * missingNumsSum) - (4 * numProduct))) / 2
+  a = (missingNumsSum + Math.sqrt((missingNumsSum * missingNumsSum) - (4 * numProduct))) / 2;
   b = missingNumsSum - a;
 
   console.log('Missing numbers: ' + a + ', ' + b);

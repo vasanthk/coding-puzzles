@@ -11,11 +11,6 @@
  3, 0, -3
  3, 0, -3
 
- - You have n - 1 numbers from 1 to n. Your task is to find the missing number.
- I.e.
- n = 5
- v = [4, 2, 5, 1]
- The result is 3.
  */
 
 function subsetSum(numbers, target, partial) {
