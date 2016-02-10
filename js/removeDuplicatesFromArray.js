@@ -21,3 +21,9 @@ Array.prototype.unique = function (mutate) {
   }
   return unique;
 };
+
+
+// ES6 version
+function unique(array) {
+  return (new Set(array));
+}
