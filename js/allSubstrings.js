@@ -13,9 +13,8 @@ function subStrings(str) {
   var rest = str.slice(1);
 
   var subStringsOfRest = subStrings(rest);
-  var len = subStringsOfRest.length;
 
-  for(var i = 0; i < len; i++) {
+  for(var i = 0; i < subStringsOfRest.length; i++) {
     subStringsOfRest.push(first + subStringsOfRest[i]);
   }
 
