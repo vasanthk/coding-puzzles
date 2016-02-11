@@ -7,7 +7,7 @@
  * https://github.com/EvanSkeete/front-end-interviews/blob/master/challenges.js#L27
  */
 
-var memoizedBlocks = [[1]];
+var memoizedBlocks = [[1]]; // Since for [0,0] there is 1 way.
 
 function countBlocks(x, y) {
   if (x < 0 || y < 0) {
