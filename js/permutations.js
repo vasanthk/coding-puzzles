@@ -13,17 +13,19 @@ var permArr = [],
 
 function permute(input) {
   var i, ch;
-  for (i = 0; i < input.length; i++) {
-    ch = input.splice(i, 1)[0];
-    usedChars.push(ch);
-    if (input.length == 0) {
-      permArr.push(usedChars.slice());
+  for (i = 0; i < input.length; i++) {     //   loop over all elements
+    ch = input.splice(i, 1)[0];            //1. pull out each element in turn
+    usedChars.push(ch);                    //   push this element
+    if (input.length == 0) {               //2. if input is empty, we pushed every element
+      permArr.push(usedChars.slice());     //   so add it as a permutation
     }
-    permute(input);
-    input.splice(i, 0, ch);
-    usedChars.pop();
+    permute(input);                        //3. compute the permutation of the smaller array
+    input.splice(i, 0, ch);                //4. add the original element to the beginning
+                                           //   making input the same size as when we started
+                                           //   but in a different order
+    usedChars.pop();                       //5. remove the element we pushed
   }
-  return permArr
+  return permArr;                          //return, but this only matters in the last call
 }
 
 console.log(permute([5, 3, 7]));
