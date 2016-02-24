@@ -14,6 +14,7 @@ Array.prototype.unique = function (mutate) {
     return accum;
   }, []);
   if (mutate) {
+    // Note: you cant assign `unique` variable to `this`, hence we make it's length to zero and push values to it.
     this.length = 0;
     for (var i = 0; i < unique.length; ++i) {
       this.push(unique[i]);
