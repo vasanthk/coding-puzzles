@@ -25,7 +25,7 @@ function subsetSum(numbers, target, partial) {
 
   // check if the partial sum is equals to target
   if (partialSum === target) {
-    console.log("%s=%s", partial.join("+"), target)
+    console.log("%s=%s", partial.join("+"), target);
     return;
   }
 
