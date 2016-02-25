@@ -26,9 +26,10 @@ function subsetSum(numbers, target, partial) {
   // check if the partial sum is equals to target
   if (partialSum === target) {
     console.log("%s=%s", partial.join("+"), target)
+    return;
   }
 
-  if (partialSum >= target) {
+  if (partialSum > target) {
     return;  // if we reach the number why bother to continue
   }
 
