@@ -34,7 +34,7 @@ var indexArr = [0, 2, 3, 1, 4];
 console.log(mutateArray(arr, indexArr));
 
 function mutateArray(input, specArr) {
-  var visited = []
+  var visited = [];
   for (var i = 0; i < specArr.length; i++) {
     var tmp;
     //keep track of array items we've already looped through (wouldn't want to mutate twice :D)
